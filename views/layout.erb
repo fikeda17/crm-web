@@ -8,7 +8,7 @@
 	<body>
 		<header>Fernando´s CRM</header>
 		<nav> 
-			<ul>
+			<ul class="navigationbar">
 				<li>Add Contact</li>
 				<li>Modify Contact</li>
 				<li>Display a Contact</li>
@@ -18,7 +18,9 @@
 				<li>Exit</li>
 			</ul>
 		</nav>
+		<article>
+			<%= yield %>
+		</article>
 		<footer>@Fernando Ikeda, 2015 Bitmakerlabs </footer>
-	<%= yield %>
 	</body>
 </html>
