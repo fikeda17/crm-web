@@ -2,12 +2,17 @@
 <p><strong>Email:</strong> <%= @contact.email %></p>
 <p><strong>Notes:</strong> </p>
 <p><%= @contact.notes %></p>
+<p><strong>Date of birth:</strong> <%= @contact.date %></p>
 
 <form action="/contacts/<%= @contact.id %>" method="post">
-	<input type="hidden" name"_method" value="delete">
-	<input type="submit" name="Delete Contact">
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" name="Delete Contact" value="Delete"> 
 </form>
 
+<form action="/contacts/<%= @contact.id %>" method="post">
+	<input type="hidden" name="_method" value="put">
+	<input type="submit" name="Edit Contact" value="Edit"> 
+</form>
 
 
 

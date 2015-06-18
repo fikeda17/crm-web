@@ -18,9 +18,14 @@
 		</div>
 
 		<div class="field">	
+			<label for="date_f" >Date of Birth</label>
+			<input type="date" name="date" id="date_f" value="<%= @contact.date%>">
+		</div>
+
+		<div class="field">	
 			<label for="notes_f" >Notes</label>
 			<input type="text" name="notes" id="notes_f" value="<%= @contact.notes%>">
 		</div>
-		
+
 		<input type="submit" name="Submit">
 		</form>

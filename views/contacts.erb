@@ -8,7 +8,7 @@
 		<h1>All Contacts</h1>
 		<ul>
 		<% $rolodex.contacts.each do |contact| %>
-			<li><%= contact.first_name %> <%= contact.last_name%>, email: <%= contact.email%>, notes: <%= contact.notes%></li>
+			<li><%= contact.first_name %> <%= contact.last_name%>, email: <%= contact.email%>, date of birth: <%= contact.date%>, notes: <%= contact.notes%></li>
 		<% end %>
 		</ul>
 	</body>
