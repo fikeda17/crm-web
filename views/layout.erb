@@ -8,15 +8,17 @@
 	<body>
 		<header>Fernando´s CRM</header>
 		<nav> 
-			<ul class="navigationbar">
-				<li>Add Contact</li>
-				<li>Modify Contact</li>
-				<li>Display a Contact</li>
-				<li>Display all Contacts</li>
-				<li>View an attribute</li>
-				<li>Delete a contact</li>
-				<li>Exit</li>
-			</ul>
+			<div class="menu">
+				<ul>
+					<li><a href="/contacts/new">Add contact</a></li>
+					<li><a href="/contacts">Modify contact</a></li>
+					<li><a href="/contacts">View a contact</a></li>
+					<li><a href="/contacts">View all contacts</a></li>
+					<li><a href="/contacts">View an attribute</a></li>
+					<li><a href="/contacts">Delete contact</a></li>
+					<li><a href="/contacts">Exit</a></li>
+				</ul>
+			</div>
 		</nav>
 		<article>
 			<%= yield %>

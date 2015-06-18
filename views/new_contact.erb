@@ -7,12 +7,29 @@
 	<body>
 		<h1>Create new Contact</h1>
 		
-		<form action="/contacts" method="post">
-			<input type="text" name="first_name">
-			<input type="text" name="last_name">
-			<input type="text" name="email">
-			<input type="text" name="notes">
-			<input type="submit" name="Submit">
+		<form action="/contacts" method="post" id="form_box">
+		<div class="field">	
+			<label for="fname_f">First Name</label>
+			<input type="text" name="first_name" id="fname_f" placeholder="e.g. Fernando">
+		</div>
+
+		<div class="field">	
+			<label for="lname_f">Last Name</label>
+			<input type="text" name="last_name" id="lname_f" placeholder="e.g. Ikeda">
+		</div>
+
+		<div class="field">	
+			<label for="email_f">Email</label>
+			<input type="text" name="email" id="email_f" placeholder="e.g. f_ikeda10@hotmail.com">
+		</div>
+
+		<div class="field">	
+			<label for="notes_f" >Notes</label>
+			<input type="text" name="notes" id="notes_f" placeholder="e.g. Anything particular that interests you about Fernando">
+		</div>
+		
+		<input type="submit" name="Submit">
 		</form>
-	</body>>
+	
+	</body>
 </html>
