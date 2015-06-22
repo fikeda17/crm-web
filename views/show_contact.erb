@@ -9,10 +9,8 @@
 	<input type="submit" name="Delete Contact" value="Delete"> 
 </form>
 
-<form action="/contacts/<%= @contact.id %>" method="post">
-	<input type="hidden" name="_method" value="put">
-	<input type="submit" name="Edit Contact" value="Edit"> 
-</form>
+<button><a href="/contacts/<%= @contact.id %>/edit">Edit Contact</a></button>
+
 
 
 
